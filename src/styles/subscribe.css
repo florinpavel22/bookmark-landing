@@ -1,0 +1,66 @@
+.subscribe {
+    background-color: var(--soft-blue);
+    padding: 5rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.subscribe h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    letter-spacing: 0.4rem;
+}
+
+.subscribe h3 {
+    max-width: 40rem;
+    margin: 0 auto 3rem auto;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe input {
+    margin-right: 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0 1.1rem;
+    width: 25rem;
+    font-family: inherit;
+}
+
+.subscribe input:focus {
+    outline: none;
+}
+
+.subscribe input:placeholder {
+    font-family: inherit;
+}
+
+
+@media screen and (max-width: 635px) {
+    .subscribe form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .subscribe input {
+        padding: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .subscribe form {
+        width: 90%;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+}

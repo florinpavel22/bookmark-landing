@@ -1,0 +1,55 @@
+.accordion {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.accordion button {
+  margin-top: 1rem;
+}
+
+.questions {
+  text-align: left;
+  height: 28rem;
+  overflow: auto;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.question-header:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.question-header.active .arrow {
+  transform: rotate(180deg);
+}
+
+.question h4 {
+  padding: 2rem 0;
+  font-weight: 400;
+  transition: color 200ms ease;
+}
+
+.question-header:hover h4 {
+  color: var(--soft-red);
+}
+
+.arrow {
+  transition: transform 200ms ease;
+  max-width: 1.6rem;
+}
+
+.question p {
+  display: none;
+  margin: 0.5rem 0 2.5rem 0;
+  max-width: 52rem;
+}
+
+.question p.active {
+  display: block;
+}

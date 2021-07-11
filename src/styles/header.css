@@ -1,0 +1,53 @@
+header {
+  padding: 3.5rem 0;
+  margin-bottom: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.desktop-menu li {
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  transition: color 200ms ease;
+}
+
+.desktop-menu li:hover {
+  cursor: pointer;
+  color: var(--soft-red);
+}
+
+.desktop-menu li:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.desktop-menu li button {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}
